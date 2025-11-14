@@ -1,0 +1,171 @@
+.weather {
+    place-self: center;
+    width: 340px;
+    padding: 0px;
+    border-radius: 10px;
+    background-image: url(/src/assets/iPhone14Pro2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    height: 540px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow:
+        inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(15px);
+}
+
+#weather-icon-image {
+    height: 200px;
+    width: 200px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    gap: 12px;
+}
+
+.search-bar input {
+    height: 35px;
+    width: 200px;
+    padding: 12px;
+    outline-color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+#search-icon {
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.927);
+    padding: 10px;
+    cursor: pointer;
+
+
+}
+
+#search-icon :hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.location {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.weather-data {
+    display: flex;
+    align-content: space-evenly;
+    gap: 100px;
+    margin-top: 4.5rem;
+}
+
+.wind-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wind-speed img {
+    height: 40px;
+    width: 40px;
+}
+
+.wind-speed p {
+    color: rgba(255, 255, 255, 0.989);
+    font-size: 25px;
+}
+
+#wind-speed-text {
+    font-size: 15px;
+}
+
+#wind-humidity-text {
+    font-size: 15px;
+}
+
+.wind-humidity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wind-humidity img {
+    height: 40px;
+    width: 40px;
+}
+
+.wind-humidity p {
+    color: rgba(255, 255, 255, 0.989);
+    font-size: 25px;
+}
+
+#outerCircle {
+    height: 18px;
+    width: 18px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    /* faint base */
+    border-top: 5px solid gray;
+    /* highlight color */
+
+   
+    border-radius: 50%;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation : spin 1s linear infinite;
+}
+
+#innerCircle {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #0F2027;
+}
+
+@keyframes spin{
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------ */
