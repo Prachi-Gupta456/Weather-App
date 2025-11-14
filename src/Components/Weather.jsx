@@ -5,6 +5,7 @@ import { faMagnifyingGlassLocation } from "@fortawesome/free-solid-svg-icons";
 import '../Styles/Weather.css'
 import WeatherDetails from "./WeatherDetails";
 
+
 function Weather() {
   const [WeatherData, setWeatherData] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ function Weather() {
    
 
     try {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=3e89bfddd0ea8b522740f477ab17a45d`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_WEATHER_KEY}`;
       const response = await fetch(url);
       const data = await response.json();
 
